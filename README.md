@@ -11,7 +11,7 @@ correctly
 LIST AND EXPLAINATION OF FUNCTIONS
 ----------------------------------
 
-list * list_new (void);
+    list * list_new (void);
 
 Simply initialize a list.
 
@@ -19,8 +19,9 @@ RETURN value: a list pointer
 
 -------------
 
-void list_append (list * lst, anytype value);
-is an alias of void _list_append (list ** lst, void * value);
+    void list_append (list * lst, anytype value);
+is an alias of
+    void _list_append (list ** lst, void * value);
 
 lst:    is the list pointer
 value:  is the value to insert
@@ -31,8 +32,9 @@ RETURN value: nothing
 
 -------------
 
-void list_delete (list * lst, int position);
-is an alias of void _list_delete (list ** lst, int position);
+    void list_delete (list * lst, int position);
+is an alias of
+    void _list_delete (list ** lst, int position);
 
 lst:        is the list pointer
 position:   is the position of element to delete
@@ -43,8 +45,9 @@ RETURN value: nothing
 
 -------------
 
-void list_get (list * lst, int position, anytype var);
-is an alias of (* (int **) (&var) = *((int **) _list_get (list ** lst, int
+    void list_get (list * lst, int position, anytype var);
+is an alias of
+    (* (int **) (&var) = *((int **) _list_get (list ** lst, int
                 position)))
 
 lst:        is the list pointer
@@ -57,8 +60,9 @@ RETURN value: nothing (in the alias)
 
 -------------
 
-void list_set (list * lst, int position, anytype value);
-is an alias of void _list_set (list ** lst, int position, void * value);
+    void list_set (list * lst, int position, anytype value);
+is an alias of
+    void _list_set (list ** lst, int position, void * value);
 
 lst:        is the list pointer
 position:   is the position of element to set
@@ -70,8 +74,9 @@ RETURN VALUE: nothing
 
 -------------
 
-void list_free (list * lst);
-is an alias of void _list_free (list ** lst);
+    void list_free (list * lst);
+is an alias of
+    void _list_free (list ** lst);
 
 lst:        is the list pointer
 
