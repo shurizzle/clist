@@ -1,11 +1,15 @@
+CLIST
+=====
 clist is a simple library which manage a list of variables independently from
 their types.
 
 THE TYPE
+--------
 It's defined a type, list, it must be used as a pointer (list *) to work
 correctly
 
-LIST AND EXPLAINATION OF FUNCTION
+LIST AND EXPLAINATION OF FUNCTIONS
+----------------------------------
 
 list * list_new (void);
 
