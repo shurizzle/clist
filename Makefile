@@ -34,4 +34,4 @@ dist: clean
 	@gzip "clist-$(VERSION).tar"
 	@rm -Rf "clist-$(VERSION)"
 
-.PHONY: all install clean test
+.PHONY: all install clean test dist
